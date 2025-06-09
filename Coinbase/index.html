@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coinbase Flasher Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="assets/logo.png" alt="Coinbase Logo" class="logo">
+    <h1>Coinbase Flasher (Simulation Only)</h1>
+    <p class="disclaimer">⚠️ This is a simulation for educational use only. No real crypto is sent or received.</p>
+
+    <form id="flashForm">
+      <input type="text" placeholder="Recipient Wallet Address" id="recipient" required>
+      <input type="number" placeholder="Amount (BTC)" id="amount" required>
+      <button type="submit">Send Fake BTC</button>
+    </form>
+
+    <div id="result" class="hidden">
+      <p>✅ Fake transaction sent!</p>
+      <p><strong>To:</strong> <span id="toAddress"></span></p>
+      <p><strong>Amount:</strong> <span id="btcAmount"></span> BTC</p>
+      <p><strong>TXID:</strong> <span id="txid"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
